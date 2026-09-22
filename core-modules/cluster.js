@@ -7,6 +7,7 @@ if (cluster.isPrimary) {
 
   const cpuCount = os.cpus().length;
   for (let i = 0; i < cpuCount; i++) {
+    //এটি একটি নতুন worker process তৈরি করে।
     cluster.fork();
   }
 } else {
