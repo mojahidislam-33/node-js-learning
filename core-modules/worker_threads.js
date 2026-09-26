@@ -1,4 +1,3 @@
-const { error } = require("node:console");
 const { Worker } = require("node:worker_threads");
 
 const worker = new Worker("./worker.js");
